@@ -29,3 +29,7 @@ class Maintenance:
 
     def __str__(self):
         return self.__maintenance_date.strftime("%m/%d/%Y") + ': ' + self.__description
+
+    @staticmethod
+    def sort_by_date(e):
+        return e.maintenance_date
