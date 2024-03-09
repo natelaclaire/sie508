@@ -6,7 +6,10 @@ from Student import Student
 
 class Course:
     def __init__(self, class_name, class_number, enrollment_capacity, waitlist_capacity):
-        if not isinstance(class_name, str) or not isinstance(class_number, str) or not isinstance(enrollment_capacity, int) or not isinstance(waitlist_capacity, int):
+        if not isinstance(class_name, str) \
+                or not isinstance(class_number, str) \
+                or not isinstance(enrollment_capacity, int) \
+                or not isinstance(waitlist_capacity, int):
             raise TypeError("class name and number must be strings and enrollment and waitlist capacities must be integers")
         else:
             self.__class_name = class_name
