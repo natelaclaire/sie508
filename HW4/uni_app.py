@@ -22,7 +22,7 @@ try:
     sheldon = Student("Sheldon Cooper", 1)
     sie508.enrollStudent(sheldon)
 
-    # try registering student a second time
+    # try registering student a second time, should fail
     sie508.enrollStudent(sheldon)
 except (StudentAlreadyEnrolled, UnableToEnrollOrWaitlist) as e:
     # print and then continue if the student is already enrolled or the waitlist is full
