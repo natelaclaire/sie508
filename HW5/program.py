@@ -1,4 +1,4 @@
-from hr import PayrollSystem, HourlyPolicy
+from hr import PayrollSystem
 from productivity import ProductivitySystem
 from employees import EmployeeDatabase
 

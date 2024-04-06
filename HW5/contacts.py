@@ -6,6 +6,10 @@ class AddressBook:
             3: Address("15 Rose St", "Concord", "NH", "03301", "Apt. B-1"),
             4: Address("39 Sole St.", "Concord", "NH", "03301"),
             5: Address("99 Mountain Rd.", "Concord", "NH", "03301"),
+            6: Address("67 Paperwork Ave", "Manchester", "NH", "03101"),
+            7: Address("15 Rose St", "Concord", "NH", "03301", "Apt. B-1"),
+            8: Address("39 Sole St.", "Concord", "NH", "03301"),
+            9: Address("99 Mountain Rd.", "Concord", "NH", "03301"),
         }
 
     def get_employee_address(self, employee_id):

@@ -6,11 +6,15 @@ from contacts import AddressBook
 class EmployeeDatabase:
     def __init__(self):
         self._employees = [
-            {"id": 1, "name": "Mary Poppins", "role": "manager"},
-            {"id": 2, "name": "John Smith", "role": "secretary"},
-            {"id": 3, "name": "Kevin Bacon", "role": "sales"},
-            {"id": 4, "name": "Jane Doe", "role": "factory"},
-            {"id": 5, "name": "Robin Williams", "role": "secretary"},
+            {"id": 1, "name": "Mary Poppins", "role": "general_manager"},
+            {"id": 2, "name": "John Smith", "role": "shift_leader"},
+            {"id": 3, "name": "Kevin Bacon", "role": "shift_leader"},
+            {"id": 4, "name": "Jane Doe", "role": "shift_leader"},
+            {"id": 5, "name": "Robin Williams", "role": "crew_member"},
+            {"id": 6, "name": "Robin Williams", "role": "crew_member"},
+            {"id": 7, "name": "Robin Williams", "role": "crew_member"},
+            {"id": 8, "name": "Robin Williams", "role": "team_member"},
+            {"id": 9, "name": "Robin Williams", "role": "custodial"},
         ]
         self.productivity = ProductivitySystem()
         self.payroll = PayrollSystem()

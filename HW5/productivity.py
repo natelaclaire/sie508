@@ -1,10 +1,11 @@
 class ProductivitySystem:
     def __init__(self):
         self._roles = {
-            "manager": ManagerRole,
-            "secretary": SecretaryRole,
-            "sales": SalesRole,
-            "factory": FactoryRole,
+            "general_manager": GeneralManagerRole,
+            "shift_leader": ShiftLeaderRole,
+            "crew_member": CrewMemberRole,
+            "team_member": TeamMemberRole,
+            "custodial": CustodialRole,
         }
 
     def get_role(self, role_id):
@@ -21,18 +22,26 @@ class ProductivitySystem:
         print("")
 
 
-class ManagerRole:
+class GeneralManagerRole:
+    def perform_duties(self, hours):
+        return f"is available to deal with customers who shout 'I want to speak with your manager!' for {hours} hours."
+
+
+class ShiftLeaderRole:
     def perform_duties(self, hours):
         return f"screams and yells for {hours} hours."
 
-class SecretaryRole:
-    def perform_duties(self, hours):
-        return f"does paperwork for {hours} hours."
 
-class SalesRole:
+class CrewMemberRole:
     def perform_duties(self, hours):
-        return f"expends {hours} hours on the phone."
+        return f"expends {hours} hours making faces at customers during peak and hard to fill times."
 
-class FactoryRole:
+
+class TeamMemberRole:
     def perform_duties(self, hours):
-        return f"manufactures gadgets for {hours} hours."
+        return f"makes barely edible food with limited availability for {hours} hours."
+
+
+class CustodialRole:
+    def perform_duties(self, hours):
+        return f"mops floors and cleans toilets for {hours} hours."
